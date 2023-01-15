@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Just Testing</title>
+        <style>
+            p{
+                text-align: center
+                font-size: 30px; 
+                font-family: Arial, sans-serif; 
+            }
+            img{
+                display: block;
+                margin: 0 auto; 
+                width: 40% 
+            }
+        </style>
+    </head>
+    <head>
+        <body> 
+            <p>Question #1</p>
+            <img src="https://i.imgflip.com/6tci39.jpg">
+        </body>
+        <title>Just Testing #2</title>
+        <style>
+            #testing1{
+                position: fixed;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #testing2{
+                position:absolute; 
+            }
+        </style>
+    </head>
+    <body> 
+        <button id = "testing1">Yes</button>
+        <button id = "testing2">No</button>
+        <script>
+            setinterval(function(){
+                var testing2 = 
+                document.getElementByld('testing2');
+                var x = Math.random()* window.innerWidth;
+                var y = Math.random()* window.innerHeight;
+                testing2.style.left = x + 'px';
+                testing2.style.top = y + 'px';
+            }, 500);
+        </script>
+        <script>document.getElementByld('testing1').addEventListener('click',function(){
+            alert('RESPOND TESTING');
+        });
+
+        </script>
+
+    </body>
+    </html>
+   
+    
